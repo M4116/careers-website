@@ -16,8 +16,12 @@
     <h2 class="text-center mt-2 mb-4"">About Us</h2>
     <p class="lead"> 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec facilisis risus. Proin sit amet velit turpis. Vestibulum vitae lectus porta, aliquet erat vitae, lacinia tellus. Nunc ut convallis arcu, at egestas leo. Quisque porttitor non libero eu dignissim. Suspendisse orci quam, tempor at consectetur sed, scelerisque vel ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar magna sit amet velit imperdiet eleifend. Quisque feugiat mi in massa tincidunt, ut semper tellus egestas. Nullam egestas ac nisi ac hendrerit. Aliquam fringilla eros sed magna ornare, ut dictum leo varius. Vivamus tristique bibendum metus vel auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    <h2>Open Positions</h2>
-    <p class="bodytext">TODO</p>
+    <h2 class="text-center mt-2 mb-4"">Open Positions</h2>
+    <div>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
       <div class="text-center">
         <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
         <p>Copyright 2024</p>
